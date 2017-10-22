@@ -3,7 +3,7 @@
 # Why use GA? 
 
 The premise of GA is simple: Allows you to use evolutive theory by apply genetic algorithm's in classification datasets with the 
-objetive of select the optimal variable combination accordinly to a fitness function. 
+objetive of select the optimal variables combination accordinly to a fitness function. 
 
 
 # Installation
