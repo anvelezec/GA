@@ -15,13 +15,13 @@
 #' @examples
 #' require(GA)
 #'
-#' Target variable for training
+#' # Target variable for training
 #' y = dataBalanced$train$target
 #'
-#' Create training feature data frame
+#' # Create training feature data frame
 #' trainData = dataBalanced$train[,-1] 
 #'
-#'
+#' # runGA execution
 #' resulTime = system.time(
 #'   
 #'  resultRunGA <- runGA(Nruns = 1,N = 2,NChrSel = 2,
