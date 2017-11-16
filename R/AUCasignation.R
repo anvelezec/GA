@@ -18,7 +18,7 @@ AUCasignation <- function(population,yTrain,train){
   # Initializes cluster
   sfInit(parallel=TRUE, cpus = ncores)
   
-  sfLibrary(GA)
+  sfLibrary(e1071)
   
   # Asigns AUC to each chromosome
   importance = sfApply(population,2,AUCNaiveBayes,yTrain = yTrain, train = train,
