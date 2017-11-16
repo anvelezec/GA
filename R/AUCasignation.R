@@ -11,6 +11,13 @@
 
 AUCasignation <- function(population,yTrain,train){
   
+  
+  # Finds numbers of cores 
+  ncores = detectCores()
+  
+  # Initializes cluster
+  sfInit(parallel=TRUE, cpus = ncores)
+  
   # Asigns AUC to each chromosome
   importance = sfApply(population,2,AUCNaiveBayes,yTrain = yTrain, train = train,
                        yTest = yTrain,test = train)
@@ -21,6 +28,9 @@ AUCasignation <- function(population,yTrain,train){
   
   # storages ID and AUC within data.fraame
   AUCTable = data.frame(ID = 1:length(AUC),AUC)
+  
+  
+  sfStop()
   
   return(AUCTable)
   
