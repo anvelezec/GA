@@ -1,8 +1,13 @@
-#####################
-### Andres Velez
-### AUCasignation
-#####################
-
+#' AUCasignation function
+#'
+#' This function allows you to scores chromosomes.
+#' @param population bolean vector.
+#' @param yTrain y values in train dataset.
+#' @param train X values in train dataset.
+#' @keywords fitness function
+#' @export
+#' @examples
+#' AUCasignation(population,yTrain,train)
 
 AUCasignation <- function(population,yTrain,train){
   
